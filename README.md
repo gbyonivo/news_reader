@@ -39,7 +39,7 @@ Currently writing this
 
 ## Versioning
 
-No installed yet (but can use bump for versioning).
+None installed yet (but will use bump for versioning).
 
 ## Authors
 
