@@ -1,0 +1,6 @@
+{
+  "extends": "kuma",
+  "rules": {
+      "no-console": 0
+  }
+}

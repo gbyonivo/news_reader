@@ -1,0 +1,4 @@
+export const actionTypes = {
+    LOAD_ARTICLES: 'LOAD_ARTICLES',
+    CONNECTION_ERROR: 'CONNECTION_ERROR'
+};
