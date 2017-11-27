@@ -8,6 +8,6 @@ app.get('/*', (req, res) => {
     res.sendFile(__dirname + '/dist/index.html');
 });
 
-console.log('Running on http://localhost:3000/articles');
+console.log('Running on http://localhost:3000');
 
 app.listen(port);

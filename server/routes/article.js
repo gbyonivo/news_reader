@@ -11,7 +11,7 @@ const _getXml = () => {
     );
 };
 
-const _extractArticles = (text) => {
+const _extractArticles = text => {
     const response = JSON.parse(convert.xml2json(text, { compact: true, spaces: 4 }));
     return response.rss.channel.item.map((article) => (
         {

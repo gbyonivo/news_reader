@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './articles.scss';
 
 const FilterTextbox = (props) => {
-    return <input type="text" { ...props } className={'articlesFilter'} placeholder={'Search Articles'}/>;
+    return <input type="text" { ...props } className={styles.articlesFilter} placeholder={'Search Articles'}/>;
 };
 
 FilterTextbox.propTypes = {

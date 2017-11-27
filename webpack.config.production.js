@@ -46,7 +46,7 @@ config.plugins = [
 
 config.module.loaders.push({
     test: /\.scss$/,
-    loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader')
+    loader: ExtractTextPlugin.extract("style", "css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass")
 });
 
 config.output.filename = 'bundle.' + dateTime +  '.min.js';

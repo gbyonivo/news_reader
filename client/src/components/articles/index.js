@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import './articles.scss';
+import styles from './articles.scss';
 import { filterList } from '../../functions';
 import Filter from './filter';
 import Item from './item';
@@ -22,7 +22,7 @@ class Articles extends Component {
     render() {
         const { articles } = this.props;
         const { filterText } = this.state;
-        return (<div className={'articles'}>
+        return (<div className={styles.articles}>
             <Filter onChange={this.changeFilterText} defaultValue={filterText}/>
             {
                 filterList(articles, filterText, 'title').map((item, index) => <Item item={item} key={index}/>)

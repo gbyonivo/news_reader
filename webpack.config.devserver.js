@@ -2,7 +2,7 @@
  * This file is only used for webpack-dev-server.
  */
 'use strict';
-
+// var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -17,20 +17,10 @@ module.exports = {
         filename: 'bundle.js',
     },
     module: {
-        loaders: [
+        loaders: [  
             {
-                test: /\.scss$/,
-                loaders: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ]
-            },
-            {
-                test: /\.css$/,
-                loaders: [
-                    'css-loader'
-                ]
+                test: /\.(scss|css)$/,
+                loader: "style!css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass"
             },
             {
                 test: /\.js$/,
@@ -38,14 +28,6 @@ module.exports = {
                 loaders: [
                     'react-hot-loader',
                     'babel-loader'
-                ]
-            },
-            { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
-            {
-                test: /\.(jpe?g|png|gif|svg)$/,
-                loaders:[
-                    'file-loader?hash=sha512&digest=hex&name=assets/images/[hash].[ext]',
-                    'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
                 ]
             }
         ],
