@@ -5,3 +5,4 @@ server/**
 webpack.config.base.js
 webpack.config.devserver.js
 webpack.config.production.js
+**/test/**
