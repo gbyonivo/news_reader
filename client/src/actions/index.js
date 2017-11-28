@@ -9,7 +9,7 @@ export const loadArticles = () => {
             dispatch(error ?
             {
                 type: actionTypes.CONNECTION_ERROR,
-                error: `cannot load articles, Status ${response.status}`
+                error: 'Error loading articles'
             } : {
                 type: actionTypes.LOAD_ARTICLES,
                 articles: JSON.parse(response.text)
