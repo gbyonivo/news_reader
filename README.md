@@ -34,7 +34,7 @@ Client side will be running on port 3000
 
 ## Running the tests
 
-Currently writing this
+run 'npm test' to run the tests
 
 
 ## Versioning

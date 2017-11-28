@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`container should render correctly 1`] = `
+<div>
+  <div
+    className="articles"
+  >
+    <input
+      className="articlesFilter"
+      defaultValue=""
+      onChange={[Function]}
+      placeholder="Search Articles"
+      type="text"
+    />
+  </div>
+</div>
+`;

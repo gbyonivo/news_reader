@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item component renders correctly 1`] = `
+<div
+  className="item"
+>
+  <h2>
+    <a
+      href="b"
+    >
+      a
+    </a>
+  </h2>
+</div>
+`;
+
+exports[`Item component renders correctly with images 1`] = `
+<div
+  className="item"
+>
+  <h2>
+    <a
+      href="b"
+    >
+      a
+    </a>
+  </h2>
+  <img
+    src="a"
+  />
+  <img
+    src="b"
+  />
+</div>
+`;
