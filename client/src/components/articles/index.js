@@ -8,14 +8,27 @@ import Filter from './filter';
 import Item from './item';
 import * as Actions from '../../actions';
 
+/**
+ * this is Articles class
+ */
 class Articles extends Component {
+    /**
+     * @param {Object} props - initial props supplied into the component
+     */
     constructor(props) {
+        /**
+         * intialising Articles object
+         */
         super(props);
         this.state = {
             filterText: ''
         };
         this.changeFilterText = this.changeFilterText.bind(this);
     }
+    /**
+     * Method of class articles for changing the filterText in the state
+     * @param {Object} e - DOM object
+     */
     changeFilterText(e) {
         this.setState({ filterText: e.target.value });
     }

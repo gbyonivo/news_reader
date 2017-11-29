@@ -1,5 +1,11 @@
 import { getXml, extractArticles } from './helper';
 
+/**
+ * @const
+ * @type {Closure} getArticlesWithImages
+ * @returns {object} returns endpoint
+ */
+
 const getArticlesWithImages = app =>
     app.get('/articlesWithImages', (req, res) => {
         getXml()

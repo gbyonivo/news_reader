@@ -5,7 +5,14 @@ import { connect } from 'react-redux';
 import * as Actions from '../actions';
 import Articles from '../components/articles';
 
+/**
+ * this is the Container class
+ */
 class Container extends Component {
+    /**
+     * @function
+     * just executes the loadArticles action
+     */
     componentDidMount() {
         this.props.actions.loadArticles();
     }
@@ -21,7 +28,6 @@ Container.propTypes = {
 };
 
 const mapStateToProps = () => ({});
-
 
 const mapDispatchToProps = (dispatch) => ({
     actions: bindActionCreators(Actions, dispatch)
